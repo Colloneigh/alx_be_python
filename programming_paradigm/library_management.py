@@ -1,7 +1,7 @@
 class Book:
     """A class representing a book with a title, author, and check-out status."""
 
-    def _init_(self, title, author):
+    def __init__(self, title, author):
         self.title = title
         self.author = author
         self._is_checked_out = False  # Private attribute to track if the book is checked out
@@ -28,7 +28,7 @@ class Book:
 class Library:
     """A class representing a library that manages a collection of books."""
 
-    def _init_(self):
+    def __init__(self):
         self._books = []  # Private list to store instances of Book
 
     def add_book(self, book):
